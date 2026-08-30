@@ -1,6 +1,11 @@
 import "./mainmenu.css";
 import { projects, experience, skills, education } from "./data.js";
 import { useState, useRef } from "react";
+import githubIcon from "../assets/github.png";
+import instaIcon from "../assets/insta.png";
+import gmailIcon from "../assets/gmail.png";
+import websiteIcon from "../assets/website.png";
+import linkinIcon from "../assets/linkin.png";
 
 function ExperienceGroup({ title, category }) {
   const filteredExperience = experience.filter(
@@ -476,32 +481,68 @@ function MainMenu() {
 </section>
 
 
-      {/* CONTACT */}
-      <section id="contact" className="section contact">
-        <h2 className="section-title">
-          Contact Me
-        </h2>
+            {/* CONTACT */}
+        <section id="contact" className="section contact-section">
+            <h2 className="section-title">Contact Me</h2>
 
-        <div className="contact-info">
-          <p>
-            Email:{" "}
-            <a href="mailto:shawncheok0119@gmail.com">
-              shawncheok0119@gmail.com
-            </a>
-          </p>
+                <div className="contact-grid">
 
-          <p>
-            GitHub:{" "}
             <a
-              href="https://github.com/shawncheok0119"
-              target="_blank"
-              rel="noreferrer"
+                href="mailto:shawncheok0119@gmail.com"
+                className="contact-card"
             >
-              github.com/shawncheok0119
+                <img
+                src={gmailIcon}
+                alt="Email"
+                className="contact-icon"
+                />
+
+                <div>
+                <h3>Email</h3>
+                <p>shawncheok0119@gmail.com</p>
+                </div>
             </a>
-          </p>
-        </div>
-      </section>
+
+
+            <a
+                href="https://github.com/shawncheok0119"
+                target="_blank"
+                rel="noreferrer"
+                className="contact-card"
+            >
+                <img
+                src={githubIcon}
+                alt="GitHub"
+                className="contact-icon"
+                />
+
+                <div>
+                <h3>GitHub</h3>
+                <p>github.com/shawncheok0119</p>
+                </div>
+            </a>
+
+
+            <a
+                href="https://www.linkedin.com/in/shawn-ann-cheok-7410172ba"
+                target="_blank"
+                rel="noreferrer"
+                className="contact-card"
+            >
+                <img
+                src={linkinIcon}
+                alt="LinkedIn"
+                className="contact-icon"
+                />
+
+                <div>
+                <h3>LinkedIn</h3>
+                <p>View LinkedIn</p>
+                </div>
+            </a>
+
+            </div>
+        </section>
 
 
       <footer>
