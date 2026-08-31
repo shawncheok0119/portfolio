@@ -16,15 +16,15 @@ export const projects = [
     {
     title: "Personal Financial Managment System with enhanced AI",
     description:
-      "A vehicle auction management system that allows users to manage cars, auctions, bids, and user accounts.",
-    tech: [""],
+      "This is my Final Year Project, a personal financial management application that helps users track expenses, manage budgets, and gain insight into their spending habits.",
+    tech: ["Flutter","Dart","Firebase","SQLite","SQL","Python","MLKit","SVM","Isolation Forest","ARIMA","Gemini AI","Cloud Run"],
     github: "https://github.com/shawncheok0119/fypapplication",
     website: "",
   },
   {
     title: "Autobid System with AWS Cloud",
     description:
-      "A vehicle auction management system that allows users to manage cars, auctions, bids, and user accounts.",
+      "This is the assignment of Designing and Developing Application on the Cloud, it was a vehicle auction management system that allows users to manage cars, auctions, bids, and user accounts.",
     tech: ["React", "ASP.NET Core", "SQL Server","AWS Cloud Services", "C++","HTML","CSS"],
     github: "https://github.com/shawncheok0119/DDAC",
     website: "",
@@ -32,7 +32,7 @@ export const projects = [
   {
     title: "Mobile Application for Cinema Management System",
     description:
-      "A mobile cinema booking application with seat selection, food and beverage ordering, payment, and booking management.",
+      "This is the assignment of Mobile Enginerring module, this is a mobile cinema booking application with seat selection, food and beverage ordering, payment, and booking management. Besides that was include the HR managment system",
     tech: ["Flutter", "Firebase", "Dart"],
     github: "https://github.com/YOUR_USERNAME/CinemaBookingSystem",
     website: "",
@@ -40,11 +40,29 @@ export const projects = [
   {
     title: "Java based Course Management System",
     description:
-      "",
+      "Developed a web-based Course Management System is the assignment of Enterprise Programming for Distributed Applications module. The system was built using Java and deployed with Apache Tomcat or TomEE with MySQL. The project focused on managing course information, student results, and related academic data through a web-based application.",
     tech: ["Java", "MySQL", "HTML", "CSS"],
     github: "https://github.com/shawncheok0119/EPDA",
     website: "",
   },
+  {
+    title: "Design Pattern with Java",
+    description:
+      "Completed a Java-based programming assignment for the Design Patterns module which focusing on structuring code and applying appropriate design patterns to different programming tasks. The assignment involved multiple scenarios which including financial transaction to demonstrate how design pattern principles can improve code organization, reusability, maintainability and overall software structure.",
+    tech: ["Java","Design Pattern"],
+    github: "https://github.com/shawncheok0119/DPAT",
+    website: "",
+  },
+  {
+    title: "Design Method",
+    description:
+      "Designed a Notion-inspired task planning and management system with AI-assisted features. The project focused on system analysis and UML modeling using Use Case, Activity, Class, Sequence, State Machine, and Object Diagrams to represent the system’s structure, behavior and user interactions.",
+    tech: ["Java","Design Pattern"],
+    github: "https://github.com/shawncheok0119/DPAT",
+    documentation:"https://github.com/shawncheok0119/DPAT/blob/main/docs/Design-Method-Documentation.pdf",
+    website: "",
+  },
+
   {
     title: "Malaysia Public Holiday Website",
     description:
@@ -94,18 +112,18 @@ export const experience = [
     duration: "July 2025 - November 2025",
     durationInMonths: 5,
     description:
-      "",
-    tags: [],
+      "Contributed to the development, maintenance, and testing of multiple real-world web applications. Worked across different stages of the development process, including UI/UX enhancement, front-end development, data management, functional testing, debugging, and system improvement.",
+    tags: ["React", "Typescript", "HTML","CSS","Javascript", "Astro", "Node.js", "GitHub"],
     category: "Internship",
   },
   {
-    title: "Software Testing Intern",
-    company: "Unipin Sdn Bhd",
+    title: "IT-Support Intern",
+    company: "Mobile Arts Sdn Bhd",
     duration: "May 2024 - July 2024",
     durationInMonths: 3,
     description:
-      "",
-    tags: ["React", "ASP.NET Core", "SQL Server","AWS Cloud Services", "C++","HTML","CSS"],
+      "IT-Support Intern which contributing to the development and testing of reusable UI components for web applications. Gained hands-on experience with modern front-end technologies and collaborated with the development team to improve component quality and usability.",
+    tags: ["Angular","HTML","CSS","Javascript"],
     category: "Internship",
   },
   {
@@ -114,20 +132,20 @@ export const experience = [
     duration: "March 2024 - March 2025",
     durationInMonths: 12,
     description:
-      "",
-    tags: [],
+      "Collaborated with other project managers to plan and coordinate the club’s annual event schedule. I also served as the Assistant Project Manager for the Escape Room event, supporting project planning, team coordination, timeline management, risk management, and event execution. Besides, I also served as the treasure for the CNY 2025 This experience strengthened my communication, teamwork, and project management skills.",
+    tags: ["Project Management","Time Managment","Event Planing","Communication","Quality Managment"],
     category: "Club",
   },
   {
-    title: "Vice President",
+    title: "Marketing Department Member",
     club: "Chinese Language & Society",
-    duration: "June 2024 - October 2024",
+    duration: "July 2025 - Novermber 2025",
     durationInMonths: 5,
     description:
       "",
-    tags: [],
+    tags: ["Video Editing","Social Media Marketing","Market Research","Canva Design"],
     category: "Event",
-  },
+  }, 
   {
     title: "Treasurer",
     club: "Chinese Language & Society",
@@ -135,51 +153,56 @@ export const experience = [
     durationInMonths: 5,
     description:
       "",
-    tags: [],
+    tags: ["Cost Management","Accounting“，”Money Transfer","Comumnication"],
     category: "Event",
   },  
   {
-    title: "Programme Department Member",
+    title: "Assistant Project Manager",
     club: "Chinese Language & Society",
-    duration: "June 2023 - October 2023",
+    duration: "June 2024 - October 2024",
     durationInMonths: 5,
     description:
       "",
-    tags: [],
+    tags: ["Time Managment","Event Planing","Communication","Quality Managment"],
     category: "Event",
   },
-  { title: "Programme Department Member",
+  { 
+    title: "Chinese New Year Programme Department Member",
     club: "Chinese Language & Society",
     duration: "October 2023 - February 2024",
     durationInMonths: 5,
     description:
       "",
-    tags: [],
+    tags: ["Video Editing","MV","Video Production","Music Production","Stage Management"],
+    category: "Event",
+  },
+  {
+    title: "Mid-Autumn Festival Celebration Programme Department Member",
+    club: "Chinese Language & Society",
+    duration: "June 2023 - October 2023",
+    durationInMonths: 5,
+    description:
+      "",
+    tags: ["Stage Management","Script Writter","Film Production","Show Production"],
     category: "Event",
   },
   { title: "“ETH-Uprising” Hackathon",
     duration: "Feb 2025 - Mar 2025",
     description:
-      "",
-    tags: [],
+      "This competition focused on developing an Ethereum-based blockchain solution. I was responsible for integrating the frontend and backend with MetaMask using React, enabling users to connect their crypto wallets and interact with the blockchain application.",
+    tags: ["MetaMask", "React", "JavaScript","CSS"],
     category: "Competition",
   },
   { title: "Gen-AI Global Goal” Hackathon",
     duration: "July 2023",
     description:
-      "",
-    tags: [],
+      "This competition focused on developing AI-driven solutions for business models and real-world business challenges. I was responsible for designing and developing the frontend interface, focusing on creating a functional and user-friendly experience for the proposed solution.",
+    tags: ["HTML","React","CSS","JavaScript"],
     category: "Competition",
   },
 ]
 
 export const skills = [
-  {
-    name: "Firebase",
-    level: 80,
-    category: "Technical",
-    icon: firebaseIcon,
-  },
   {
     name: "Flutter",
     level: 80,
@@ -203,6 +226,12 @@ export const skills = [
     level: 70,
     category: "Technical",
     icon: javaIcon,
+  },
+  {
+    name: "Firebase",
+    level: 80,
+    category: "Technical",
+    icon: firebaseIcon,
   },
   {name:"AWS Cloud Services",
     level: 70,

@@ -6,6 +6,7 @@ import instaIcon from "../assets/insta.png";
 import gmailIcon from "../assets/gmail.png";
 import websiteIcon from "../assets/website.png";
 import linkinIcon from "../assets/linkin.png";
+import githubwhiteIcon from "../assets/githubwhite.png";
 
 function ExperienceGroup({ title, category }) {
   const filteredExperience = experience.filter(
@@ -112,19 +113,26 @@ function MainMenu() {
         </p>
 
         <div className="hero-buttons">
-          <a href="#projects" className="primary-btn">
-            View Projects
-          </a>
 
-          <a
-            href="https://github.com/shawncheok0119"
-            target="_blank"
-            rel="noreferrer"
-            className="secondary-btn"
-          >
-            GitHub
-          </a>
-        </div>
+  <a href="#projects" className="primary-btn">
+    View Projects
+  </a>
+
+  <a
+    href="https://github.com/shawncheok0119"
+    target="_blank"
+    rel="noreferrer"
+    className="secondary-btn"
+  >
+    <img
+      src={githubIcon}
+      alt="GitHub"
+      className="button-icon"
+    />
+    GitHub
+  </a>
+
+</div>
       </section>
 
 
@@ -133,9 +141,19 @@ function MainMenu() {
         <h2 className="section-title">About Me</h2>
 
         <p className="about-text">
-          I am a passionate software developer with experience in building
-          web and mobile applications. I enjoy solving complex problems and
-          creating intuitive user experiences.
+          I am Shawn which is a fresh Software Engineering graduate from Asia Pacific University (APU). I have a strong interest in building practical and user-focused applications, Besides that, I also enjoy turning ideas into functional software while continuously exploring new technologies.
+          <br></br>
+          <br></br>
+          I have hands-on experience in developing web and mobile applications using technologies such as React, Flutter, Java, and SQL. In the academic projects and internship experience have been exposed to various areas of software development which including front-end development, back-end development, full-stack development, database development, software testing, business analysis, and system functional analysis.
+          <br></br>
+          <br></br>
+          I also actively participated in university clubs and events to gained experience in problem-solving, risk management, project timeline management, teamwork, and communication. In these experience, I working with different teams and organizing activities helped me become more adaptable, responsible, and confident.
+          <br></br>
+          <br></br>
+          I am eager to continue learning, take on new challenges and apply both my technical and interpersonal skills to real-world software projects. In need more information and project can referred in this portfolio. Thank you for visiting my portfolio! I hope you enjoyed learning more about my journey and projects.
+          <br></br>
+          <br></br>
+          Have a great day! 😊
         </p>
       </section>
 
@@ -439,36 +457,54 @@ function MainMenu() {
 
           )}
 
-          {(project.github ||
-            project.website) && (
+{(project.github || project.website) && (
+  <div className="project-buttons">
 
-            <div className="project-buttons">
+    {project.github && (
+      <a
+        href={project.github}
+        target="_blank"
+        rel="noreferrer"
+        className="github-btn"
+      >
+        <img
+          src={githubwhiteIcon}
+          alt="GitHubWhite"
+          className="button-icon"
+        />
+        View GitHub
+      </a>
+    )}
 
-              {project.github && (
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="github-btn"
-                >
-                  View GitHub
-                </a>
-              )}
+      {project.documentation && (
+      <a
+        href={project.documentation}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="project-link"
+      >
+        View Documentation
+      </a>
+    )}
 
-              {project.website && (
-                <a
-                  href={project.website}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="website-btn"
-                >
-                  Visit Website
-                </a>
-              )}
+    {project.website && (
+      <a
+        href={project.website}
+        target="_blank"
+        rel="noreferrer"
+        className="website-btn"
+      >
+        <img
+          src={websiteIcon}
+          alt="Website"
+          className="button-icon"
+        />
+        Visit Website
+      </a>
+    )}
 
-            </div>
-
-          )}
+  </div>
+)}
 
         </div>
 

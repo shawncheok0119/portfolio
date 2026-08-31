@@ -150,11 +150,16 @@ a {
 }
 
 .secondary-btn {
-  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
 
-  border: 1px solid #cbd5e1;
-
-  color: #334155;
+.button-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
 }
 
 .secondary-btn:hover {
@@ -204,11 +209,9 @@ a {
 
 .about-text {
   max-width: 800px;
-
   color: #64748b;
-
   line-height: 1.8;
-
+  text-align: justify;
   font-size: 18px;
 }
 
@@ -1075,17 +1078,19 @@ a {
 .github-btn,
 .website-btn {
   width: 100%;
-
   padding: 10px 16px;
 
   border-radius: 7px;
 
   font-size: 14px;
-
   font-weight: 600;
 
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 
+  text-align: center;
   transition: 0.25s;
 }
 
@@ -1238,7 +1243,7 @@ footer {
    PROJECT = 3 COLUMNS
 ===================================================== */
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
 
   .projects-grid {
     grid-template-columns:
