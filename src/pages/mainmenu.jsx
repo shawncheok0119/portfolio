@@ -7,6 +7,7 @@ import gmailIcon from "../assets/gmail.png";
 import websiteIcon from "../assets/website.png";
 import linkinIcon from "../assets/linkin.png";
 import githubwhiteIcon from "../assets/githubwhite.png";
+import docsIcon from "../assets/doc.png";
 
 function ExperienceGroup({ title, category }) {
   const filteredExperience = experience.filter(
@@ -476,14 +477,19 @@ function MainMenu() {
       </a>
     )}
 
-      {project.documentation && (
+    {project.documentation && (
       <a
         href={project.documentation}
         target="_blank"
         rel="noopener noreferrer"
-        className="project-link"
+        className="docs-btn"
       >
-        View Documentation
+        <img
+          src={docsIcon}
+          alt="Docs"
+          className="button-icon"
+        />
+        View Docs
       </a>
     )}
 
