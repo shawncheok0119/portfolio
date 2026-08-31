@@ -9,7 +9,7 @@ import linkinIcon from "../assets/linkin.png";
 import githubwhiteIcon from "../assets/githubwhite.png";
 import docsIcon from "../assets/doc.png";
 
-function ExperienceGroup({ title, category }) {
+function ExperienceGroup({ title, category,onOpen }) {
   const filteredExperience = experience.filter(
     (exp) => exp.category === category
   );
@@ -28,10 +28,13 @@ function ExperienceGroup({ title, category }) {
               <div className="timeline-dot"></div>
             </div>
 
-            <div className="timeline-card">
-              <p className="timeline-duration">
-                {exp.duration}
-              </p>
+           <div
+  className="timeline-card"
+  onClick={() => onOpen(exp)}
+>
+  <p className="timeline-duration">
+    {exp.duration}
+  </p>
 
               <h3>{exp.title}</h3>
 
@@ -64,9 +67,128 @@ function ExperienceGroup({ title, category }) {
   );
 }
 
+function DetailModal({ item, onClose }) {
+  if (!item) return null;
+
+  return (
+    <div className="detail-overlay" onClick={onClose}>
+      <div
+        className="detail-modal"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button
+          className="detail-close"
+          onClick={onClose}
+        >
+          ×
+        </button>
+
+        {/* IMAGE */}
+        <div className="detail-image">
+          {item.image ? (
+            <img
+              src={item.image}
+              alt={item.title}
+            />
+          ) : (
+            <div className="detail-image-default">
+              <h2>{item.title}</h2>
+            </div>
+          )}
+        </div>
+
+        {/* CONTENT */}
+        <div className="detail-content">
+
+          {item.duration && (
+            <span className="detail-duration">
+              {item.duration}
+            </span>
+          )}
+
+          <h2>{item.title}</h2>
+
+          {(item.company || item.club) && (
+            <p className="detail-company">
+              {item.company || item.club}
+            </p>
+          )}
+
+          <p className="detail-description">
+            {item.description}
+          </p>
+
+          {/* Project tech */}
+          {item.tech && item.tech.length > 0 && (
+            <div className="detail-tags">
+              {item.tech.map((tech) => (
+                <span key={tech}>
+                  {tech}
+                </span>
+              ))}
+            </div>
+          )}
+
+          {/* Experience tags */}
+          {item.tags && item.tags.length > 0 && (
+            <div className="detail-tags">
+              {item.tags.map((tag) => (
+                <span key={tag}>
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
+
+          {/* LINKS */}
+          <div className="detail-buttons">
+
+            {item.github && (
+              <a
+                href={item.github}
+                target="_blank"
+                rel="noreferrer"
+                className="github-btn"
+              >
+                View GitHub
+              </a>
+            )}
+
+            {item.documentation && (
+              <a
+                href={item.documentation}
+                target="_blank"
+                rel="noreferrer"
+                className="docs-btn"
+              >
+                View Documentation
+              </a>
+            )}
+
+            {item.website && (
+              <a
+                href={item.website}
+                target="_blank"
+                rel="noreferrer"
+                className="website-btn"
+              >
+                Visit Website
+              </a>
+            )}
+
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function MainMenu() {
-  const [currentProject, setCurrentProject] = useState(0);
-  const projectGridRef = useRef(null);
+    const [currentProject, setCurrentProject] = useState(0);
+    const [selectedDetail, setSelectedDetail] = useState(null);
+
+    const projectGridRef = useRef(null);
+  
 
   const handleProjectScroll = () => {
     const container = projectGridRef.current;
@@ -374,21 +496,25 @@ function MainMenu() {
           <ExperienceGroup
             title="Internship"
             category="Internship"
+            onOpen={setSelectedDetail}
           />
 
           <ExperienceGroup
             title="Competition"
             category="Competition"
+            onOpen={setSelectedDetail}
           />
 
           <ExperienceGroup
             title="Club"
             category="Club"
+            onOpen={setSelectedDetail}
           />
 
           <ExperienceGroup
             title="Event"
             category="Event"
+            onOpen={setSelectedDetail}
           />
 
         </div>
@@ -427,11 +553,19 @@ function MainMenu() {
       <div
         className="project-card"
         key={`${project.title}-${index}`}
+        onClick={() => setSelectedDetail(project)}
       >
 
         <div className="project-image">
-          <span>Project Screenshot</span>
-        </div>
+  {project.image ? (
+    <img
+      src={project.image}
+      alt={project.title}
+    />
+  ) : (
+    <span>{project.title}</span>
+  )}
+</div>
 
         <div className="project-content">
 
@@ -467,6 +601,7 @@ function MainMenu() {
         target="_blank"
         rel="noreferrer"
         className="github-btn"
+         onClick={(e) => e.stopPropagation()}
       >
         <img
           src={githubwhiteIcon}
@@ -483,6 +618,7 @@ function MainMenu() {
         target="_blank"
         rel="noopener noreferrer"
         className="docs-btn"
+         onClick={(e) => e.stopPropagation()}
       >
         <img
           src={docsIcon}
@@ -499,6 +635,7 @@ function MainMenu() {
         target="_blank"
         rel="noreferrer"
         className="website-btn"
+         onClick={(e) => e.stopPropagation()}
       >
         <img
           src={websiteIcon}
@@ -586,6 +723,10 @@ function MainMenu() {
             </div>
         </section>
 
+<DetailModal
+  item={selectedDetail}
+  onClose={() => setSelectedDetail(null)}
+/>
 
       <footer>
         <p>

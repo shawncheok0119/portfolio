@@ -34,7 +34,7 @@ export const projects = [
     description:
       "This is the assignment of Mobile Enginerring module, this is a mobile cinema booking application with seat selection, food and beverage ordering, payment, and booking management. Besides that was include the HR managment system",
     tech: ["Flutter", "Firebase", "Dart"],
-    github: "https://github.com/YOUR_USERNAME/CinemaBookingSystem",
+    github: "https://github.com/shawncheok0119/MAE",
     website: "",
   },
   {
@@ -59,7 +59,7 @@ export const projects = [
       "Designed a Notion-inspired task planning and management system with AI-assisted features. The project focused on system analysis and UML modeling using Use Case, Activity, Class, Sequence, State Machine, and Object Diagrams to represent the system’s structure, behavior and user interactions.",
     tech: ["Java","Design Pattern"],
     github: "https://github.com/shawncheok0119/DPAT",
-    documentation:"https://github.com/shawncheok0119/DPAT/blob/main/docs/Design-Method-Documentation.pdf",
+    documentation:"https://github.com/shawncheok0119/portfolio/blob/main/pdf/CHEOK_SHAWN_ANN_DMTD.pdf",
     website: "",
   },
 
@@ -90,9 +90,9 @@ export const projects = [
   {
     title: "Cafe KL Website",
     description:
-      "",
+      "Contributed to a café directory website that helps users discover cafés and browse available café information. My role focused on data cleaning, removing incorrect information, functional testing, bug reporting, and updating the project through GitHub",
     tech: ["React", "Typescript", "CSS","JSON","Github"],
-    github: "Contributed to a café directory website that helps users discover cafés and browse available café information. My role focused on data cleaning, removing incorrect information, functional testing, bug reporting and updating the project through GitHub.",
+    github: "",
     website: "https://www.cafekl.my/",
   },
   {
@@ -142,7 +142,7 @@ export const experience = [
     duration: "July 2025 - Novermber 2025",
     durationInMonths: 5,
     description:
-      "",
+      "Contributed to the event’s marketing planning by developing promotional ideas, creating visual materials, and editing videos for marketing purposes. I was also responsible for preparing and editing game-related videos to be presented during the event.",
     tags: ["Video Editing","Social Media Marketing","Market Research","Canva Design"],
     category: "Event",
   }, 
@@ -152,7 +152,7 @@ export const experience = [
     duration: "October 2024 - February 2025",
     durationInMonths: 5,
     description:
-      "",
+      "Managed the event’s financial planning by preparing cash flow estimates, setting budgets and controlling expenses throughout the event.",
     tags: ["Cost Management","Accounting“，”Money Transfer","Comumnication"],
     category: "Event",
   },  
@@ -162,7 +162,7 @@ export const experience = [
     duration: "June 2024 - October 2024",
     durationInMonths: 5,
     description:
-      "",
+      "Planned and managed an Escape Room event by developing the event concept, defining the project scope, and coordinating the overall timeline. My responsibilities included risk management, identifying potential issues, proposing solutions and contributing ideas to improve the event experience and ensure smooth execution.",
     tags: ["Time Managment","Event Planing","Communication","Quality Managment"],
     category: "Event",
   },
@@ -172,7 +172,7 @@ export const experience = [
     duration: "October 2023 - February 2024",
     durationInMonths: 5,
     description:
-      "",
+      "Planned and coordinated the stage performance and backstage operations for the event, including show flow and production arrangements. I was also involved in MV production as a scriptwriter and music director, contributing to the creative direction and overall presentation of the event.",
     tags: ["Video Editing","MV","Video Production","Music Production","Stage Management"],
     category: "Event",
   },
@@ -182,7 +182,7 @@ export const experience = [
     duration: "June 2023 - October 2023",
     durationInMonths: 5,
     description:
-      "",
+      "Contributed to the preparation and production of a stage performance with responsibilities including scriptwriting and video shooting for story presentation. I also assisted with backstage preparation, lighting coordination, and PA system planning to support the smooth execution of the event.",
     tags: ["Stage Management","Script Writter","Film Production","Show Production"],
     category: "Event",
   },
@@ -312,19 +312,19 @@ export const education = [
   {
     title: "Bachelor of Software Engineering with Honours",
     institution: "Asia Pacific University of Technology & Innovation (APU)",
-    duration: "2024 - 2026",
+    duration: "September 2024 - August 2026",
     durationInYears: 2,
     description:
       "",
-    tags: ["Software Engineering", "Computer Science"],
+    tags: ["Software Engineering", "Computer Science","Python","Java","Database","Frontend Development"],
   },
   {
     title: "Diploma in Software Engineering",
     institution: "Asia Pacific University of Technology & Innovation (APU)",
-    duration: "2022 - 2024",
+    duration: "April 2022 - August 2024",
     durationInYears: 2,
     description:
       "",
-    tags: ["Computing", "Programming"],
+    tags: ["Software Engineering", "Java","Mobile Application","Backend Development","AWS Cloud Service","System Analysis","Functional Analysis","Database Managament"],
   }
 ];
