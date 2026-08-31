@@ -66,24 +66,24 @@ export const projects = [
   {
     title: "Malaysia Public Holiday Website",
     description:
-      "",
-    tech: ["React", "Typescript", "CSS","JSON"],
+      "Contributed to a Malaysian public holiday website during my internship at Sorable Sdn. Bhd. The website provides information on government public holidays in Malaysia, while my role focused on UI improvements, functionality enhancement, data validation and testing.",
+    tech: ["React", "Typescript", "CSS","JSON","Github"],
     github: "",
     website: "https://www.malaysiapublicholiday.com/",
   },
   {
     title: "Dentist Clinic Website",
     description:
-      "",
-    tech: ["React", "Typescript", "CSS","JSON"],
+      "Contributed to a Malaysia-wide dental clinic directory website during my internship at Sorable Sdn. Bhd. The platform allows users to search for dental clinics across different locations in Malaysia. My work involved data validation, UI improvements, filter enhancements, testing and bug reporting.",
+    tech: ["React", "Typescript", "CSS","JSON","Github"],
     github: "",
     website: "https://www.dentistclinic.my/",
   },
   {
     title: "Hair Salon Website",
     description:
-      "",
-    tech: ["Astro","JSON"],
+      "Contributed to a hair salon directory website that helps users discover salons across Malaysia. My role focused on data cleaning, UI improvements, card and grid layout adjustments, bug testing and general website maintenance.",
+    tech: ["Astro","JSON","Github"],
     github: "",
     website: "https://www.findhairsalon.com/",
   },
@@ -91,14 +91,14 @@ export const projects = [
     title: "Cafe KL Website",
     description:
       "",
-    tech: ["React", "Typescript", "CSS","JSON"],
-    github: "",
+    tech: ["React", "Typescript", "CSS","JSON","Github"],
+    github: "Contributed to a café directory website that helps users discover cafés and browse available café information. My role focused on data cleaning, removing incorrect information, functional testing, bug reporting and updating the project through GitHub.",
     website: "https://www.cafekl.my/",
   },
   {
     title: "Confinement Centre Website",
     description:
-      "",
+      "Contributed to a confinement centre directory website that helps users search for confinement centres and access related information. My role focused on data verification, UI/UX improvements, Google Maps integration, testing and general website enhancement.",
     tech: ["React", "Typescript", "CSS","JSON"],
     github: "",
     website: "https://www.confinementcentre.my/",
